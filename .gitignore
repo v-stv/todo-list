@@ -1,4 +1,11 @@
-.DS_Store
-.idea
-dist
-node_modules
+node_modules/
+.env*
+.vscode/
+.idea/
+*.code-workspace
+dist/
+build/
+*.log
+.cache/
+*.tmp
+*.DS_Store
