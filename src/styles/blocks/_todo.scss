@@ -1,0 +1,81 @@
+.todo {
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: 24px 0 24px 0;
+  box-shadow: var(--box-shadow);
+
+  &__form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 16px;
+    margin-bottom: 24px;
+  }
+
+  &__field {
+    width: 100%;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    font-weight: 600;
+    margin-bottom: 24px;
+  }
+
+  &__tasks-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 10px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+  }
+
+  &-item__checkbox {
+    width: 18px;
+    aspect-ratio: 1;
+    accent-color: var(--color-dark-alt);
+    margin-right: 12px;
+  }
+
+  &-item__delete-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: none;
+    margin-left: auto;
+
+    &:hover svg path {
+      stroke: var(--color-dark-gray)
+    }
+  }
+
+  &__button {
+    display: inline-flex;
+    align-items: center;
+    height: var(--button-height);
+    padding: 12px;
+    color: var(--color-gray);
+    background-color: var(--color-dark-alt);
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    &:hover {
+      background-color: var(--color-dark-gray);
+    }
+  }
+
+  &__delete-all-button {
+    padding: 0;
+    border: none;
+
+    &:hover {
+      color: var(--color-dark-gray);
+    }
+  }
+}

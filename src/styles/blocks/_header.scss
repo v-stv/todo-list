@@ -1,0 +1,14 @@
+.header {
+  margin-bottom: 12px;
+
+  &__inner {
+    width: 100%;
+    border: var(--border);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+  }
+
+  &__title {
+    font-weight: 600;
+  }
+}

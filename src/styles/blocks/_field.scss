@@ -1,0 +1,34 @@
+.field {
+  &__input {
+    --fieldInputPaddingX: 16px;
+    --fieldSeachInputIconSize: 16px;
+
+    width: 100%;
+    height: var(--input-height);
+    padding: 12px 14px;
+    border: var(--border);
+    border-radius: var(--border-radius);
+
+    &:focus {
+      border-color: var(--color-dark-alt);
+      outline: none;
+    }
+
+    &[type="search"] {
+      &:placeholder-shown {
+        background-image: url("/src/icons/search-icon.svg");
+        background-repeat: no-repeat;
+        background-position: calc(100% - 12px) center;
+        background-size: 18px;
+
+      }
+    }
+  }
+
+  &__label {
+    color: var(--color-dark-gray);
+    cursor: pointer;
+    flex: 1;
+    margin-right: 12px;
+  }
+}
