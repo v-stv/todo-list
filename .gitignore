@@ -9,5 +9,5 @@ build/
 .cache/
 *.tmp
 *.DS_Store
-src/*.scss
-src/*.css.map
+*.scss
+*.css.map
