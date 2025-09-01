@@ -118,6 +118,9 @@ button {
 .todo-item__delete-button:hover svg path {
   stroke: var(--color-dark-gray);
 }
+.todo-item--completed {
+  text-decoration: line-through;
+}
 .todo__button {
   display: inline-flex;
   align-items: center;
@@ -163,6 +166,7 @@ button {
   cursor: pointer;
   flex: 1;
   margin-right: 12px;
+  word-break: break-word;
 }
 
 /*# sourceMappingURL=main.css.map */

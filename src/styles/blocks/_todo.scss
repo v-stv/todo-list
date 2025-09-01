@@ -35,23 +35,29 @@
     border-radius: var(--border-radius);
   }
 
-  &-item__checkbox {
-    width: 18px;
-    aspect-ratio: 1;
-    accent-color: var(--color-dark-alt);
-    margin-right: 12px;
-  }
+  &-item {
+    &__checkbox {
+      width: 18px;
+      aspect-ratio: 1;
+      accent-color: var(--color-dark-alt);
+      margin-right: 12px;
+    }
 
-  &-item__delete-button {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    border: none;
-    margin-left: auto;
+    &__delete-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      border: none;
+      margin-left: auto;
 
-    &:hover svg path {
-      stroke: var(--color-dark-gray)
+      &:hover svg path {
+        stroke: var(--color-dark-gray)
+      }
+    }
+
+    &--completed {
+      text-decoration: line-through;
     }
   }
 
